@@ -19,6 +19,9 @@
     <ClInclude Include="src\Saber\Log.h">
       <Filter>Saber</Filter>
     </ClInclude>
+    <ClInclude Include="src\Saber\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Saber\Events\Event.h" />
+    <ClInclude Include="src\Saber\Events\KeyEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Saber\Application.cpp">

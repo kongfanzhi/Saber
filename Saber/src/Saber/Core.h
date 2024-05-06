@@ -6,4 +6,10 @@
 	#else
 		#define SABER_API _declspec(dllimport)
 	#endif // DEBUG
+
+#else
+	#error saber only support windows
+
 #endif // SABER_ENGINE
+
+#define BTT(x) (1 << x)
