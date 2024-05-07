@@ -4,6 +4,9 @@
     <Filter Include="Saber">
       <UniqueIdentifier>{12D1130E-7EE5-3BBF-4767-DF1EB33A38F0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Saber\Events">
+      <UniqueIdentifier>{B6549541-A2B7-24E6-4B3D-5D9C377FF068}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Saber.h" />
@@ -16,12 +19,21 @@
     <ClInclude Include="src\Saber\EntryPoint.h">
       <Filter>Saber</Filter>
     </ClInclude>
+    <ClInclude Include="src\Saber\Events\ApplicationEvent.h">
+      <Filter>Saber\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Saber\Events\Event.h">
+      <Filter>Saber\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Saber\Events\KeyEvent.h">
+      <Filter>Saber\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Saber\Events\MouseEvent.h">
+      <Filter>Saber\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Saber\Log.h">
       <Filter>Saber</Filter>
     </ClInclude>
-    <ClInclude Include="src\Saber\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Saber\Events\Event.h" />
-    <ClInclude Include="src\Saber\Events\KeyEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Saber\Application.cpp">
