@@ -10,6 +10,12 @@ workspace "Saber"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Saber/vendor/GLFW/include"
+
+include "Saber/vendor/GLFW"
+
 project "Saber"
     location "Saber"
     kind "SharedLib"
@@ -30,7 +36,14 @@ project "Saber"
     includedirs
 	{
         "%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+    links 
+	{ 
+		"GLFW",
+		"opengl32.lib"
 	}
 
     filter "system:windows"
