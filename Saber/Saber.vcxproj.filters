@@ -34,6 +34,7 @@
     <ClInclude Include="src\Saber\Log.h">
       <Filter>Saber</Filter>
     </ClInclude>
+    <ClInclude Include="src\sbpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Saber\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Saber\Log.cpp">
       <Filter>Saber</Filter>
     </ClCompile>
+    <ClCompile Include="src\sbpch.cpp" />
   </ItemGroup>
 </Project>

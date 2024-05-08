@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Saber
 {
 	class SABER_API KeyEvent : public Event

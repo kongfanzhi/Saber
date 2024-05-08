@@ -1,9 +1,6 @@
 #pragma once
-
+#include "sbpch.h"
 #include "Saber/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Saber
 {
@@ -73,9 +70,10 @@ namespace Saber
 	private:
 		Event& m_Event;
 	};
-
-	inline std::ostream& operator<<(std::ostream os, const Event& e)
+	
+	inline std::ostream& operator<<(std::ostream& os, const Event& e)
 	{
 		return os << e.ToString();
 	}
+
 }

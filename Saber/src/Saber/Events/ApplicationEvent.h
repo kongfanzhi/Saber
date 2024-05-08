@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Saber
 {
 	class SABER_API WindowResizeEvent : public Event
@@ -21,6 +19,9 @@ namespace Saber
 			ss << "WindowResizeEvent: " << m_width << "," << m_height;
 			return ss.str();
 		}
+
+		EVENT_CLASS_TYPE(WindowResize)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 
 	private:
 		unsigned int m_width, m_height;

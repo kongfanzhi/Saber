@@ -18,6 +18,9 @@ project "Saber"
     targetdir ("bin/" ..outputdir.. "/%{prj.name}")
     objdir ("bin-int/" ..outputdir.. "/%{prj.name}")
 
+    pchheader "sbpch.h"
+	pchsource "Saber/src/sbpch.cpp"
+
     files
 	{
 		"%{prj.name}/src/**.h",
