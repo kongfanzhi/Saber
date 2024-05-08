@@ -1,6 +1,6 @@
 [submodule "Saber/vendor/spdlog"]
 	path = Saber/vendor/spdlog
 	url = https://github.com/gabime/spdlog.git
-[submodule "Saber/vendor/GLFW"]
+[submodule "Saber/vendor/glfw"]
 	path = Saber/vendor/GLFW
 	url = https://github.com/kongfanzhi/glfw.git
