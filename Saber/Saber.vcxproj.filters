@@ -44,5 +44,8 @@
       <Filter>Saber</Filter>
     </ClCompile>
     <ClCompile Include="src\sbpch.cpp" />
+    <ClCompile Include="Window.cpp">
+      <Filter>Saber</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
