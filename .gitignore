@@ -2,6 +2,8 @@
 .vs/
 bin/
 bin-int/
+.idea/
+.vscode/
 
 # Files
 *.user
