@@ -161,11 +161,14 @@
     <ClInclude Include="src\Saber\Events\KeyEvent.h" />
     <ClInclude Include="src\Saber\Events\MouseEvent.h" />
     <ClInclude Include="src\Saber\Log.h" />
+    <ClInclude Include="src\Saber\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\Saber\Window.h" />
     <ClInclude Include="src\sbpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Saber\Application.cpp" />
     <ClCompile Include="src\Saber\Log.cpp" />
+    <ClCompile Include="src\Saber\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\sbpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

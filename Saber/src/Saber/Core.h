@@ -12,4 +12,12 @@
 
 #endif // SABER_ENGINE
 
+#ifdef SB_ENABLE_ASSERTS
+	#define SB_ASSERT(x, ...) { if(!(x)) { SB_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+	#define SB_CORE_ASSERT(x, ...) { if(!(x)) { SB_CORE_ERROR("Assertion Failed: {0}", __VA_ARGS__); __debugbreak(); } }
+#else
+	#define SB_ASSERT(x, ...)
+	#define SB_CORE_ASSERT(x, ...)
+#endif
+
 #define BTT(x) (1 << x)

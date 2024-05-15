@@ -7,6 +7,12 @@
     <Filter Include="Saber\Events">
       <UniqueIdentifier>{B6549541-A2B7-24E6-4B3D-5D9C377FF068}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Saber\Platform">
+      <UniqueIdentifier>{A6615B18-922F-4F1E-7BC3-BF4467302B83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Saber\Platform\Windows">
+      <UniqueIdentifier>{E051EB78-CC4B-14CB-B5B8-AADBA1517A37}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Saber.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\Saber\Log.h">
       <Filter>Saber</Filter>
     </ClInclude>
+    <ClInclude Include="src\Saber\Platform\Windows\WindowsWindow.h">
+      <Filter>Saber\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Saber\Window.h">
+      <Filter>Saber</Filter>
+    </ClInclude>
     <ClInclude Include="src\sbpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\Saber\Log.cpp">
       <Filter>Saber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Saber\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Saber\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\sbpch.cpp" />
   </ItemGroup>
