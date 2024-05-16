@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Saber/vendor/glfw/include"
+IncludeDir["Glad"] = "Saber/vendor/Glad/include"
 
 include "Saber/vendor/glfw"
+include "Saber/vendor/Glad"
 
 project "Saber"
     location "Saber"
@@ -37,12 +39,14 @@ project "Saber"
 	{
         "%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
 	}
 
     links 
 	{ 
 		"GLFW",
+        "Glad",
 		"opengl32.lib"
 	}
 
@@ -54,7 +58,8 @@ project "Saber"
         defines
         {
             "SABER_BUILD_DLL",
-            "SABER_PLATFORM_WINDOWS"
+            "SABER_PLATFORM_WINDOWS",
+            "GLFW_INCLUDE_NONE"
         }
 
         postbuildcommands
@@ -64,14 +69,17 @@ project "Saber"
 
     filter "configurations:Debug"
         defines "SB_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "SB_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "SB_DIST"
+        buildoptions "/MD"
         optimize "On"
 
 
@@ -112,12 +120,15 @@ project "SandBox"
 
     filter "configurations:Debug"
         defines "SB_DEBUG"
+        buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "SB_RELEASE"
+        buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "SB_DIST"
+        buildoptions "/MD"
         optimize "On"

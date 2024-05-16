@@ -1,7 +1,8 @@
 #pragma once
 #include "Core.h"
-#include "Events/Event.h"
-#include "Saber//Events/ApplicationEvent.h"
+#include "Saber/LayerStack.h"
+#include "Saber/Events/Event.h"
+#include "Saber/Events/ApplicationEvent.h"
 #include "Window.h"
 
 namespace Saber
@@ -14,11 +15,15 @@ namespace Saber
 
 		void Run();
 		void OnEvent(Event& e);
+
+		void PushLayer(Layer* layer);
+		void PushOverlay(Layer* layer);
 	private:
+		bool OnWindowClose(WindowCloseEvent& e);
+		
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
-
-		bool OnWindowClose(WindowCloseEvent& e);
+		LayerStack m_LayerStack;
 	};
 	Application* CreateApplication();
 }

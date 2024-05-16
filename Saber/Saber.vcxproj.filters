@@ -37,6 +37,12 @@
     <ClInclude Include="src\Saber\Events\MouseEvent.h">
       <Filter>Saber\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Saber\Layer.h">
+      <Filter>Saber</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Saber\LayerStack.h">
+      <Filter>Saber</Filter>
+    </ClInclude>
     <ClInclude Include="src\Saber\Log.h">
       <Filter>Saber</Filter>
     </ClInclude>
@@ -50,6 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Saber\Application.cpp">
+      <Filter>Saber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Saber\Layer.cpp">
+      <Filter>Saber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Saber\LayerStack.cpp">
       <Filter>Saber</Filter>
     </ClCompile>
     <ClCompile Include="src\Saber\Log.cpp">
