@@ -4,3 +4,6 @@
 [submodule "Saber/vendor/glfw"]
 	path = Saber/vendor/glfw
 	url = https://github.com/kongfanzhi/glfw.git
+[submodule "Saber/vendor/imgui"]
+	path = Saber/vendor/imgui
+	url = https://github.com/kongfanzhi/imgui.git
