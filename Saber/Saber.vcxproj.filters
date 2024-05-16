@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGl">
+      <UniqueIdentifier>{3E7D2C1D-AA08-9AE1-B319-1DD61F24F6E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Saber">
       <UniqueIdentifier>{12D1130E-7EE5-3BBF-4767-DF1EB33A38F0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Saber\Events">
       <UniqueIdentifier>{B6549541-A2B7-24E6-4B3D-5D9C377FF068}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Saber\Platform">
-      <UniqueIdentifier>{A6615B18-922F-4F1E-7BC3-BF4467302B83}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Saber\Platform\Windows">
-      <UniqueIdentifier>{E051EB78-CC4B-14CB-B5B8-AADBA1517A37}</UniqueIdentifier>
+    <Filter Include="Saber\ImGui">
+      <UniqueIdentifier>{BC4B8D38-2801-062E-B1F5-FF041DAAFC31}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGl\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Saber.h" />
     <ClInclude Include="src\Saber\Application.h">
       <Filter>Saber</Filter>
@@ -37,6 +49,9 @@
     <ClInclude Include="src\Saber\Events\MouseEvent.h">
       <Filter>Saber\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Saber\ImGui\ImGuiLayer.h">
+      <Filter>Saber\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Saber\Layer.h">
       <Filter>Saber</Filter>
     </ClInclude>
@@ -46,17 +61,23 @@
     <ClInclude Include="src\Saber\Log.h">
       <Filter>Saber</Filter>
     </ClInclude>
-    <ClInclude Include="src\Saber\Platform\Windows\WindowsWindow.h">
-      <Filter>Saber\Platform\Windows</Filter>
-    </ClInclude>
     <ClInclude Include="src\Saber\Window.h">
       <Filter>Saber</Filter>
     </ClInclude>
     <ClInclude Include="src\sbpch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGl\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Saber\Application.cpp">
       <Filter>Saber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Saber\ImGui\ImGuiLayer.cpp">
+      <Filter>Saber\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Saber\Layer.cpp">
       <Filter>Saber</Filter>
@@ -66,9 +87,6 @@
     </ClCompile>
     <ClCompile Include="src\Saber\Log.cpp">
       <Filter>Saber</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Saber\Platform\Windows\WindowsWindow.cpp">
-      <Filter>Saber\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\sbpch.cpp" />
   </ItemGroup>
