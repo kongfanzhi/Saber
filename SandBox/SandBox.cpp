@@ -1,4 +1,5 @@
 #include "Saber.h"
+//#include "Saber/ImGui/ImGuiLayer.h"
 
 class ExampleLayer : public Saber::Layer
 {
@@ -25,6 +26,7 @@ public:
 	SandBox()
 	{
 		PushLayer(new ExampleLayer());
+		PushOverlay(new Saber::ImGuiLayer());
 	}
 	~SandBox()
 	{
