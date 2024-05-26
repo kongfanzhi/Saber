@@ -11,12 +11,19 @@ public:
 
 	void OnUpdate() override
 	{
-		SB_INFO("ExampleLayer::Update");
+		if (Saber::Input::IsKeyPressed(SB_KEY_TAB))
+			SB_TRACE("Tab key is pressed (poll)!");
 	}
 
 	void OnEvent(Saber::Event& event) override
 	{
-		SB_TRACE("{0}", event);
+		if (event.GetEventType() == Saber::EventType::KeyPressed)
+		{
+			Saber::KeyPressedEvent& e = (Saber::KeyPressedEvent&)event;
+			if (e.GetKeyCode() == SB_KEY_TAB)
+				SB_TRACE("Tab key is pressed (event)!");
+			SB_TRACE("{0}", (char)e.GetKeyCode());
+		}
 	}
 };
 

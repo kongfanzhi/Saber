@@ -156,6 +156,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\Platform\OpenGl\ImGuiOpenGLRenderer.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Saber.h" />
     <ClInclude Include="src\Saber\Application.h" />
@@ -166,14 +167,18 @@
     <ClInclude Include="src\Saber\Events\KeyEvent.h" />
     <ClInclude Include="src\Saber\Events\MouseEvent.h" />
     <ClInclude Include="src\Saber\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Saber\Input.h" />
+    <ClInclude Include="src\Saber\KeyCodes.h" />
     <ClInclude Include="src\Saber\Layer.h" />
     <ClInclude Include="src\Saber\LayerStack.h" />
     <ClInclude Include="src\Saber\Log.h" />
+    <ClInclude Include="src\Saber\MouseButtonCodes.h" />
     <ClInclude Include="src\Saber\Window.h" />
     <ClInclude Include="src\sbpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Platform\OpenGl\ImGuiOpenGLRenderer.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Saber\Application.cpp" />
     <ClCompile Include="src\Saber\ImGui\ImGuiLayer.cpp" />
