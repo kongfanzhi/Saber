@@ -7,3 +7,9 @@
 [submodule "Saber/vendor/imgui"]
 	path = Saber/vendor/imgui
 	url = https://github.com/kongfanzhi/imgui.git
+[submodule "Saber/vender/glm"]
+	path = Saber/vendor/glm
+	url = https://github.com/g-truc/glm
+[submodule "Saber/vendor/glm"]
+	path = Saber/vendor/glm
+	url = https://github.com/g-truc/glm
