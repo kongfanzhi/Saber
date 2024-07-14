@@ -1,5 +1,6 @@
 #include "Saber.h"
 //#include "Saber/ImGui/ImGuiLayer.h"
+#include "imgui/imgui.h"
 
 #include <glm/vec3.hpp> // glm::vec3
 #include <glm/vec4.hpp> // glm::vec4
@@ -32,6 +33,13 @@ public:
 			SB_TRACE("Tab key is pressed (poll)!");
 	}
 
+	virtual void OnImGuiRender() override
+	{
+		ImGui::Begin("Test");
+		ImGui::Text("Hello World");
+		ImGui::End();
+	}
+	
 	void OnEvent(Saber::Event& event) override
 	{
 		if (event.GetEventType() == Saber::EventType::KeyPressed)
@@ -50,7 +58,6 @@ public:
 	SandBox()
 	{
 		PushLayer(new ExampleLayer());
-		PushOverlay(new Saber::ImGuiLayer());
 	}
 	~SandBox()
 	{

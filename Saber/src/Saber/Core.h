@@ -1,11 +1,15 @@
 #pragma once
 
 #ifdef SABER_PLATFORM_WINDOWS
+#if SB_DYNAMIC_LINK
 	#ifdef SABER_BUILD_DLL
 		#define SABER_API _declspec(dllexport) 
 	#else
 		#define SABER_API _declspec(dllimport)
 	#endif // DEBUG
+#else
+	#define SABER_API
+#endif
 
 #else
 	#error saber only support windows

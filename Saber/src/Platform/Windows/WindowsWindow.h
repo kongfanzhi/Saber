@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include "Saber/Window.h"
+#include "Platform/OpenGl/OpenGLContext.h"
 #include <GLFW/glfw3.h>
 
 namespace Saber
@@ -28,6 +29,7 @@ namespace Saber
 
     private:
         GLFWwindow* m_Window;
+        Graphicscontext* m_Context;
 
         struct WindowData
         {
