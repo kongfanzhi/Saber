@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClInclude Include="src\Platform\OpenGl\OpenGLBuffer.h" />
     <ClInclude Include="src\Platform\OpenGl\OpenGLContext.h" />
+    <ClInclude Include="src\Platform\OpenGl\OpenGLVertexArray.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Saber.h" />
@@ -166,6 +167,7 @@
     <ClInclude Include="src\Saber\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\Saber\Renderer\Renderer.h" />
     <ClInclude Include="src\Saber\Renderer\Shader.h" />
+    <ClInclude Include="src\Saber\Renderer\VertexArray.h" />
     <ClInclude Include="src\Saber\Window.h" />
     <ClInclude Include="src\sbpch.h" />
     <ClInclude Include="vendor\glm\glm\common.hpp" />
@@ -588,6 +590,7 @@
   <ItemGroup>
     <ClCompile Include="src\Platform\OpenGl\OpenGLBuffer.cpp" />
     <ClCompile Include="src\Platform\OpenGl\OpenGLContext.cpp" />
+    <ClCompile Include="src\Platform\OpenGl\OpenGLVertexArray.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Saber\Application.cpp" />
@@ -599,6 +602,7 @@
     <ClCompile Include="src\Saber\Renderer\Buffer.cpp" />
     <ClCompile Include="src\Saber\Renderer\Renderer.cpp" />
     <ClCompile Include="src\Saber\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Saber\Renderer\VertexArray.cpp" />
     <ClCompile Include="src\sbpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
