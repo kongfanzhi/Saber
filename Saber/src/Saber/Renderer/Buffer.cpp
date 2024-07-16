@@ -10,9 +10,9 @@ namespace Saber
     {
         switch (Renderer::GetAPI())
         {
-        case RendererAPI::None: SB_CORE_ASSERT(false, "RendererAPI::None is currently not supported!");
+        case RendererAPI::API::None: SB_CORE_ASSERT(false, "RendererAPI::None is currently not supported!");
             return nullptr;
-        case RendererAPI::OpenGL: return new OpenGLVertexBuffer(vertices, size);
+        case RendererAPI::API::OpenGL: return new OpenGLVertexBuffer(vertices, size);
         }
         SB_CORE_ASSERT(false, "Unknown RendererAPI!");
         return nullptr;
@@ -22,8 +22,8 @@ namespace Saber
     {
         switch (Renderer::GetAPI())
         {
-        case RendererAPI::None:    SB_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
-        case RendererAPI::OpenGL:  return new OpenGLIndexBuffer(indices, size);
+        case RendererAPI::API::None:    SB_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
+        case RendererAPI::API::OpenGL:  return new OpenGLIndexBuffer(indices, size);
         }
 
         SB_CORE_ASSERT(false, "Unknown RendererAPI!");
