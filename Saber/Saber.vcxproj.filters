@@ -54,6 +54,9 @@
     <ClInclude Include="src\Platform\OpenGl\OpenGLContext.h">
       <Filter>src\Platform\OpenGl</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\OpenGl\OpenGLRendererAPI.h">
+      <Filter>src\Platform\OpenGl</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\OpenGl\OpenGLVertexArray.h">
       <Filter>src\Platform\OpenGl</Filter>
     </ClInclude>
@@ -114,7 +117,16 @@
     <ClInclude Include="src\Saber\Renderer\GraphicsContext.h">
       <Filter>src\Saber\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="src\Saber\Renderer\OrthographicCamera.h">
+      <Filter>src\Saber\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Saber\Renderer\RenderCommand.h">
+      <Filter>src\Saber\Renderer</Filter>
+    </ClInclude>
     <ClInclude Include="src\Saber\Renderer\Renderer.h">
+      <Filter>src\Saber\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Saber\Renderer\RendererAPI.h">
       <Filter>src\Saber\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\Saber\Renderer\Shader.h">
@@ -1385,6 +1397,9 @@
     <ClCompile Include="src\Platform\OpenGl\OpenGLContext.cpp">
       <Filter>src\Platform\OpenGl</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\OpenGl\OpenGLRendererAPI.cpp">
+      <Filter>src\Platform\OpenGl</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\OpenGl\OpenGLVertexArray.cpp">
       <Filter>src\Platform\OpenGl</Filter>
     </ClCompile>
@@ -1415,7 +1430,16 @@
     <ClCompile Include="src\Saber\Renderer\Buffer.cpp">
       <Filter>src\Saber\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\Saber\Renderer\OrthographicCamera.cpp">
+      <Filter>src\Saber\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Saber\Renderer\RenderCommand.cpp">
+      <Filter>src\Saber\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="src\Saber\Renderer\Renderer.cpp">
+      <Filter>src\Saber\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Saber\Renderer\RendererAPI.cpp">
       <Filter>src\Saber\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="src\Saber\Renderer\Shader.cpp">

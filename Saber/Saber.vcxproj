@@ -166,9 +166,10 @@
     <ClInclude Include="src\Saber\MouseButtonCodes.h" />
     <ClInclude Include="src\Saber\Renderer\Buffer.h" />
     <ClInclude Include="src\Saber\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Saber\Renderer\OrthographicCamera.h" />
+    <ClInclude Include="src\Saber\Renderer\RenderCommand.h" />
     <ClInclude Include="src\Saber\Renderer\Renderer.h" />
     <ClInclude Include="src\Saber\Renderer\RendererAPI.h" />
-    <ClInclude Include="src\Saber\Renderer\RenderCommand.h" />
     <ClInclude Include="src\Saber\Renderer\Shader.h" />
     <ClInclude Include="src\Saber\Renderer\VertexArray.h" />
     <ClInclude Include="src\Saber\Window.h" />
@@ -604,9 +605,10 @@
     <ClCompile Include="src\Saber\LayerStack.cpp" />
     <ClCompile Include="src\Saber\Log.cpp" />
     <ClCompile Include="src\Saber\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Saber\Renderer\OrthographicCamera.cpp" />
+    <ClCompile Include="src\Saber\Renderer\RenderCommand.cpp" />
     <ClCompile Include="src\Saber\Renderer\Renderer.cpp" />
     <ClCompile Include="src\Saber\Renderer\RendererAPI.cpp" />
-    <ClCompile Include="src\Saber\Renderer\RenderCommand.cpp" />
     <ClCompile Include="src\Saber\Renderer\Shader.cpp" />
     <ClCompile Include="src\Saber\Renderer\VertexArray.cpp" />
     <ClCompile Include="src\sbpch.cpp">

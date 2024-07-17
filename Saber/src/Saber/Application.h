@@ -10,6 +10,7 @@
 #include "Saber/Renderer/Shader.h"
 #include "Saber/Renderer/Buffer.h"
 #include "Saber/Renderer/VertexArray.h"
+#include "Saber/Renderer/OrthographicCamera.h"
 
 namespace Saber
 {
@@ -41,6 +42,8 @@ namespace Saber
 
         std::shared_ptr<Shader> m_BlueShader;
         std::shared_ptr<VertexArray> m_SquareVA;
+
+        OrthographicCamera m_Camera;
 
     private:
         static Application* s_Instance;
