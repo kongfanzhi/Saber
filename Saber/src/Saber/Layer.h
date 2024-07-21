@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include "Saber/Core.h"
+#include "Saber/Core/Timestep.h"
 #include "Saber/Events/Event.h"
 
 namespace Saber
@@ -13,7 +14,7 @@ namespace Saber
 
         virtual void OnAttach() {}
         virtual void OnDetach() {}
-        virtual void OnUpdate() {}
+        virtual void OnUpdate(Timestep ts) {}
         virtual void OnImGuiRender() {}
         virtual void OnEvent(Event& event) {}
 

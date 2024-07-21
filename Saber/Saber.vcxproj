@@ -152,6 +152,7 @@
     <ClInclude Include="src\Saber.h" />
     <ClInclude Include="src\Saber\Application.h" />
     <ClInclude Include="src\Saber\Core.h" />
+    <ClInclude Include="src\Saber\Core\Timestep.h" />
     <ClInclude Include="src\Saber\EntryPoint.h" />
     <ClInclude Include="src\Saber\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Saber\Events\Event.h" />
